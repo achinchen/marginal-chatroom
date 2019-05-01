@@ -1,0 +1,118 @@
+body, html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+body {
+  margin: 4rem;
+  font-family: 'Noto Sans TC', sans-serif;
+  color: #555444;
+}
+
+/* index*/
+
+h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: .4rem;
+}
+
+.join-box {
+  position: relative;
+  height: 86vh;
+}
+
+.join-box > section {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -150%);
+  display: flex;
+  flex-direction: column;
+}
+
+.join-form {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+
+.join-form > label {
+  display: inline-block;
+  padding-right: .4rem;
+}
+
+
+.join-form > input {
+  width: 10rem;
+}
+
+
+/* chat */
+
+h1 {
+  padding-bottom: 1.6rem;
+  text-align: center;
+  font-size: 4.2rem;
+  line-height: 1.2;
+  letter-spacing: .5rem;
+  border-bottom: 1px solid #999;
+}
+
+main {
+  margin: .8rem;
+}
+
+.server-message {
+  color: #60b99a;
+  font-size: 1rem;
+}
+
+.room-information {
+  text-align: right;
+}
+
+.room-information > ul {
+  visibility: hidden; 
+}
+
+.room-information.show > ul {
+  visibility: visible; 
+}
+
+.server-message::before {
+  content: '# Notification # ';
+  text-transform: uppercase;
+}
+
+*:focus {
+  outline: none;
+}
+
+.message-form > input {
+  width: 90%;
+  margin-top: .4rem;
+  line-height: 2;
+
+}
+
+.message-form > button {
+  line-height: 2;
+  color: #fafafa;
+  background-color: #60b99a;
+}
+
+.chat-room {
+  width: 100%;
+  height: 46vh;
+  margin-top: .4rem;
+  font-size: 1rem;
+  overflow-y: scroll;
+}
+
+.chat-room > p > .time {
+  float: right
+}

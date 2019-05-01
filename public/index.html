@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Noto+Sans+TC">
+  <title>Marginal Chatroom</title>
+</head>
+<body>
+  <main class="join-box">
+    <section>
+      <h2>Marginal Chatroom</h2>
+      <form class="join-form"
+            action="/chat.html">
+        <label for="name">Name</label>
+        <input id="name"
+               name="name"
+               placeholder="Name"
+               required>
+        <br>
+        <label for="room">Room</label>
+        <input id="room"
+               name="room"
+               placeholder="Room"
+               required>
+        <button>Send</button>
+      </form>
+    </section>
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+</body>
+</html>
